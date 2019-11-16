@@ -1,0 +1,5 @@
+@mixin header($color){
+    padding:25px 0px;/*Marge verticale*/
+    text-align:center;/*texte centré*/
+    color: $color;
+}

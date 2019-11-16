@@ -1,3 +1,40 @@
+@charset "UTF-8";
+html, body, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+a {
+  text-decoration: none;
+  color: #c2be47;
+}
+
+.intro {
+  background: transparent url("../img/header.jpg") no-repeat;
+  background-size: cover;
+}
+.intro header {
+  padding: 25px 0px;
+  /*Marge verticale*/
+  text-align: center;
+  /*texte centré*/
+  color: #dfde9f;
+  font-size: 45px;
+}
+.intro .summary {
+  padding: 25px 0px;
+  /*Marge verticale*/
+  text-align: center;
+  /*texte centré*/
+  color: #ffffff;
+  font-size: 20px;
+}
+.intro .preamble {
+  padding: 20px;
+  color: #ffffff;
+  font-style: italic;
+  background-color: #0f1f0a70;
+}
 
 /*# sourceMappingURL=style.css.map */
