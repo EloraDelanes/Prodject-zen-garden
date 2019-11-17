@@ -10,6 +10,11 @@ a {
   color: #c2be47;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #0f1f0a;
+}
+
 .intro {
   background: transparent url("../img/header.jpg") no-repeat;
   background-size: cover;
@@ -40,13 +45,13 @@ a {
 #zen-supporting {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   padding: 20px;
 }
 #zen-supporting .explanation, #zen-supporting .participation, #zen-supporting .benefits, #zen-supporting .requirements {
   border: #6f9532 solid;
   background-color: #dfde9f;
   padding: 10px;
+  text-align: center;
 }
 #zen-supporting .explanation:hover, #zen-supporting .participation:hover, #zen-supporting .benefits:hover, #zen-supporting .requirements:hover {
   background-color: rgba(94, 71, 31, 0.712);
@@ -55,6 +60,17 @@ a {
 #zen-supporting footer {
   display: flex;
   flex-wrap: wrap;
+}
+
+.wrapper {
+  background-color: #6f9532;
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper .design-archives {
+  border-left: #0f1f0a solid;
+  border-right: #0f1f0a solid;
+  padding: 0px 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

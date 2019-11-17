@@ -3,11 +3,17 @@
     text-align:center;/*texte centré*/
     color: $color;
 }
+@mixin column{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
 
 @mixin article {
     border: $text-light solid;
     background-color: $light;
     padding: 10px;
+    text-align: center;
     &:hover{
         background-color: $hover;
         color: $white;

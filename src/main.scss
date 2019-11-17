@@ -10,6 +10,10 @@ a{
     text-decoration: none;
     color: $link;
 }
+a:hover{
+    text-decoration: underline;
+    color: $text-corp;
+}
 
 .intro{
     background: transparent url('../img/header.jpg') no-repeat;
@@ -26,20 +30,28 @@ a{
         padding: 20px;
         color: $white;
         font-style: italic;
-        background-color: #0f1f0a70;
+        background-color: $background-dark;
     }
 }
 
 #zen-supporting{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 20px;
+    @include column;
     .explanation, .participation, .benefits, .requirements{
         @include article;
     }
     footer{
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+.wrapper{
+    background-color: $text-light;
+    display: flex;
+    justify-content: space-around;
+    .design-archives{
+        border-left: $text-corp solid;
+        border-right: $text-corp solid;
+        padding: 0px 40px;
     }
 }
