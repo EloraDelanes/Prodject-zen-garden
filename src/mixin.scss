@@ -3,3 +3,13 @@
     text-align:center;/*texte centré*/
     color: $color;
 }
+
+@mixin article {
+    border: $text-light solid;
+    background-color: $light;
+    padding: 10px;
+    &:hover{
+        background-color: $hover;
+        color: $white;
+    }
+}

@@ -37,4 +37,24 @@ a {
   background-color: #0f1f0a70;
 }
 
+#zen-supporting {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px;
+}
+#zen-supporting .explanation, #zen-supporting .participation, #zen-supporting .benefits, #zen-supporting .requirements {
+  border: #6f9532 solid;
+  background-color: #dfde9f;
+  padding: 10px;
+}
+#zen-supporting .explanation:hover, #zen-supporting .participation:hover, #zen-supporting .benefits:hover, #zen-supporting .requirements:hover {
+  background-color: rgba(94, 71, 31, 0.712);
+  color: #ffffff;
+}
+#zen-supporting footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*# sourceMappingURL=style.css.map */

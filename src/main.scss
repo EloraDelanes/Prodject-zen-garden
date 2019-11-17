@@ -29,3 +29,17 @@ a{
         background-color: #0f1f0a70;
     }
 }
+
+#zen-supporting{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+    .explanation, .participation, .benefits, .requirements{
+        @include article;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
