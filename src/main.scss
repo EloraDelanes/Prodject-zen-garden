@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "mixin.scss";
 
+/*general*/
 html, body, p{ 
 	margin:0; 
     padding:0; 
@@ -15,6 +16,27 @@ a:hover{
     color: $text-corp;
 }
 
+h3{
+    color: $text-corp;
+    &:hover{
+        letter-spacing: 8px; //espacer les lettres
+    }
+}
+
+
+/*extend*/
+%column{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+%padding{
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+/*premiere partie*/
 .intro{
     background: transparent url('../img/header.jpg') no-repeat;
     background-size: cover;
@@ -27,26 +49,39 @@ a:hover{
         font-size: 20px;
     }
     .preamble{
-        padding: 20px;
+        @extend %padding;
         color: $white;
         font-style: italic;
         background-color: $background-dark;
+        h3{
+            color: $light;
+        }
     }
 }
 
+/*seconde partie */
 #zen-supporting{
-    @include column;
+    @extend %column;
     .explanation, .participation, .benefits, .requirements{
-        @include article;
+        @include article($light);
     }
     footer{
         display: flex;
         flex-wrap: wrap;
+        a{
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            background-color: $light;
+            text-align: center;
+            @extend %padding;
+        }
     }
 }
 
+/* bas de page */
 .wrapper{
-    background-color: $text-light;
+    background-color: $light;
     display: flex;
     justify-content: space-around;
     .design-archives{
